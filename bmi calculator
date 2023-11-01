@@ -1,0 +1,43 @@
+var a = prompt("Would you like to use Imperial System or Metric System to calculate your BMI? (you can write IS or MS): ")
+console.log(a)
+if (a=="IS")
+{
+var isw = prompt("Your Weight (in pounds): ")
+console.log(isw)
+var ish = prompt("Your Height (in inches): ")
+console.log(ish)
+var BMI = 703*(isw/(ish*ish))
+console.log("Your BMI is",BMI)
+}
+else if (a=="MS")
+{
+var msw = prompt("Your Weight (in kilograms): ")
+console.log(msw)
+var msh = prompt("Your Height (in meters): ")
+console.log(msh)
+var BMI1 = msw/(msh*msh)
+console.log("Your BMI is",BMI1)
+}
+var bmi = BMI
+var bmi = BMI1
+var b = prompt("Would you like to know your BMI range? (you can write YES or NO): ")
+if (b=="YES")
+{
+    if (bmi<16)
+    {console.log("Your BMI range is classified as SEVERE THINNESS.")}
+    else if (bmi>16 && bmi<=17)
+    {console.log("Your BMI range is classified as MODERATE THINNESS.")}
+    else if (bmi>17 && bmi<=18.5)
+    {console.log("Your BMI range is classified as MILD THINNESS.")}
+    else if (bmi>18.5 && bmi<=25)
+    {console.log("Your BMI range is classified as NORMAL.")}
+    else if (bmi>25 && bmi<=30)
+    {console.log("Your BMI range is classified as OVERWEIGHT.")}
+    else if (bmi>30 && bmi<=35)
+    {console.log("Your BMI range is classified as OBESE CLASS I.")}
+    else if (bmi>35 && bmi<=40)
+    {console.log("Your BMI range is classified as OBESE CLASS II.")}
+    else if (bmi>40)
+    {console.log("Your BMI range is classified as OBESE CLASS III.")}
+    else
+    {console.log("")}}
